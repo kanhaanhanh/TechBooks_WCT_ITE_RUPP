@@ -1,0 +1,16 @@
+.button-size {
+  width: 130px;
+  top: 85px;
+  
+}
+.cateContainer {
+  display: flex;
+  justify-content: end;
+  
+  
+}
+
+.custom-dropdown {
+  margin-top: -40px;
+  margin-right: -20px;;
+}

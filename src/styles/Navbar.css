@@ -1,0 +1,49 @@
+.navbar{
+    background-color: #87ceeb;
+}
+.btn{
+    /* color: #ffffff;  */
+    font-weight: bold; 
+    margin: 5px 20px 5px 5px; 
+    width: 100px;
+    border-radius: 10px;
+}
+.logo{
+    width: 90px; 
+    height: 50px;
+    margin-left: 40px; 
+}
+
+.btn-light{
+    color: black;
+}
+.btn-primary{
+    color: white;
+}
+.search-bar{ 
+    border-radius: 10px 0 0 10px;
+}
+.search{
+    width: 550px;
+    margin: 5px 20px 5px 5px;
+}
+.input-group-text img{
+    width: 25px;
+}
+.input-group-text{
+    border-radius: 0 10px 10px 0;
+}
+
+/*responsive*/
+
+@media only screen and (max-width: 600px) {
+    .search{
+        width: 200px;
+    }
+    .input-group{
+        width: 40vw;
+    }    
+        
+    
+}
+  

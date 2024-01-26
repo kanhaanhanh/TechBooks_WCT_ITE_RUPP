@@ -1,0 +1,49 @@
+/* Assume a class 'detail-book-card' for the detail book card */
+.button-container {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+  }
+  
+.book-size-detail{
+    width: 90%;
+    height: auto;
+}
+.book-detail-size{
+    width: 1275px;
+    height: auto;
+}
+.custom-button {
+    width: 250px;
+    padding: 10px 20px;
+    margin-right: 50px;
+  }
+.title{
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 50px;
+    color: black;
+}
+.title h5{
+    font-size: 1rem;
+   
+}
+.author .h6, h6 {
+    font-size: 0.8rem;
+}
+  
+.detail-card-size{
+    width: 100%;
+}
+.variable{
+    font-weight: bold;
+    margin-right: 15px;
+}
+.book-size{
+    width: 120px;
+    height: 150px;
+}
+.custom-card{
+    width: 350px;
+    height: 150px;
+}

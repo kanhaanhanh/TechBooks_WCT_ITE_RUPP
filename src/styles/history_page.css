@@ -1,0 +1,70 @@
+/* Add your existing styles */
+
+.book-info {
+    margin: 0 0 0 10px;
+    font-family: Roboto, Arial;
+}
+
+.history-word {
+    margin-top: 40px;
+    margin-left: 22px;
+}
+
+.book-history {
+    margin-left: 40px;
+}
+
+.book-review {
+    max-width: 300px; /* Adjusted to max-width for better responsiveness */
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(35, 101, 207);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* img {
+    width: 80px;
+    height: 100px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-right: 2px;
+} */
+
+.book-title {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.book-author,
+.book-stats {
+    font-size: 10px;
+    color: rgb(193, 180, 180);
+}
+
+.book-author {
+    margin-bottom: 5px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Updated for better responsiveness */
+    gap: 12px;
+    row-gap: 30px;
+}
+
+.date-time {
+    display: flex;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Roboto, Arial;
+}
+.size {
+    font-size: 0.5em; 
+}
