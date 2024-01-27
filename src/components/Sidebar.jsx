@@ -34,12 +34,12 @@ const Sidebar = () => {
               <span>Messages</span>
             </li>
           </Link>
-          <Link to="/RequestBookDOAD" style={{ textDecoration: "none" }}>
+          {/* <Link to="/RequestBookDOAD" style={{ textDecoration: "none" }}>
             <li>
               <RiContactsBookUploadFill className="icon" />
               <span>Request Book</span>
             </li>
-          </Link>
+          </Link> */}
         </ul>
       </div>
     </div>
