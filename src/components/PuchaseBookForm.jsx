@@ -173,7 +173,7 @@ const PurchaseBookForm = () => {
               </div>
               <div className="formInput">
                 <label htmlFor="previewURL">
-                  PDF URL (Link from another website):
+                  Preview URL (Link from another website):
                 </label>
                 <input
                   type="text"
