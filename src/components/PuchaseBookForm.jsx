@@ -16,6 +16,7 @@ const PurchaseBookForm = () => {
     yearOfPublish: "",
     category: "",
     pdfURL: "", // For consistency, even if it's a link from another website
+    previewURL: "",
     isFree: false, // Default value is set to false
   });
 
@@ -65,6 +66,7 @@ const PurchaseBookForm = () => {
         yearOfPublish: bookInfo.yearOfPublish,
         category: bookInfo.category,
         pdfURL: bookInfo.pdfURL,
+        previewURL: bookInfo.previewURL,
         coverURL: bookCover,
         isFree: bookInfo.isFree,
       });
@@ -80,6 +82,7 @@ const PurchaseBookForm = () => {
         yearOfPublish: "",
         category: "",
         pdfURL: "",
+        previewURL: "",
         isFree: false,
       });
     } catch (error) {
@@ -169,16 +172,16 @@ const PurchaseBookForm = () => {
                 />
               </div>
               <div className="formInput">
-                <label htmlFor="isFree">
-                  Is Free:
-                  <input
-                    type="checkbox"
-                    id="isFree"
-                    name="isFree"
-                    checked={bookInfo.isFree}
-                    onChange={handleBookInfoChange}
-                  />
+                <label htmlFor="previewURL">
+                  PDF URL (Link from another website):
                 </label>
+                <input
+                  type="text"
+                  id="previewURL"
+                  name="previewURL"
+                  value={bookInfo.previewURL}
+                  onChange={handleBookInfoChange}
+                />
               </div>
               <div>
                 <button type="submit">Upload Purchase Book</button>
