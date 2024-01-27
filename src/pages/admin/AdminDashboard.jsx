@@ -7,6 +7,7 @@ const AdminDashboard = () => {
       <div className="ADwidgets">
         <Widget type="user" />
         <Widget type="book" />
+        <Widget type= "request"/>
       </div>
     </AdminLayout>
   );
