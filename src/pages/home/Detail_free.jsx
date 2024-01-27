@@ -223,21 +223,30 @@ function DetailBook() {
                     </Button>
                   </>
                 ) : book.isFree && !user ? (
-                  <Button
-                    variant="outline-secondary"
-                    className="custom-button"
-                    href={book?.previewURL}
-                    target="_blank"
-                  >
-                    Preview
-                  </Button>
+                  <>
+                  <Link to={"/login"}>
+                    <Button
+                      variant="outline-secondary"
+                      className="custom-button"
+                    >
+                      Download
+                    </Button>
+                    </Link>
+                    <Link to={"/login"}>
+                      <Button
+                        variant="outline-secondary"
+                        className="custom-button"
+                      >
+                        Read
+                      </Button>
+                    </Link>
+                  </>
                 ) : (
                   <>
                     <Button
                       variant="primary"
                       className="custom-button"
                       href={book?.pdfURL}
-                      target="_blank"
                     >
                       Purchase
                     </Button>
@@ -245,7 +254,6 @@ function DetailBook() {
                       variant="outline-secondary"
                       className="custom-button"
                       href={book?.previewURL}
-                      target="_blank"
                     >
                       Preview
                     </Button>

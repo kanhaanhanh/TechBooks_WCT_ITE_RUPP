@@ -29,7 +29,7 @@ export const BookProvider = ({ children }) => {
           ...doc.data(),
         }));
         setBooks(booksData);
-        setBookCount(booksData.length); // Update book count when fetching data
+        // setBookCount(booksData.length); // Update book count when fetching data
       } catch (error) {
         console.error("Error fetching data:", error);
         setError(error.message);
