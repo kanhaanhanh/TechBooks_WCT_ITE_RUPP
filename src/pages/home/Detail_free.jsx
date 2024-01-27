@@ -253,7 +253,7 @@ function DetailBook() {
                     <Button
                       variant="outline-secondary"
                       className="custom-button"
-                      href={book?.previewURL}
+                      href={book?.pdfURL}
                     >
                       Preview
                     </Button>
