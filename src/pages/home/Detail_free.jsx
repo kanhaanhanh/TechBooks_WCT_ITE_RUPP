@@ -76,12 +76,12 @@ function DetailBook() {
 
   const handleRead = () => {
     // Assuming book.pdfURL is the URL to the PDF file
-    const downloadLink = document.createElement("a");
-    downloadLink.href = book.pdfURL;
-    downloadLink.download = `${book.title}.pdf`; // Set the desired file name
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
+    const openLink = document.createElement("a");
+    openLink.href = book.pdfURL;
+    openLink.target = "_blank"; // Open the link in a new tab or window
+    document.body.appendChild(openLink);
+    openLink.click();
+    document.body.removeChild(openLink);
   };
 
   const handleSimilarBooksPageChange = (pageNumber) => {
